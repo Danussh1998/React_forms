@@ -1,0 +1,35 @@
+.formInput { 
+ display: flex;
+ flex-direction: column;
+ width: 280px;
+
+ 
+}
+
+input {
+  margin : 10px 0px;
+  padding : 15px;
+  border-radius: 5px;
+  border : 1px solid gray;
+}
+
+label { 
+  font-size: 12px;
+  color: gray;
+  text-align: left;
+}
+
+span{
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display:none;
+}
+
+input:invalid[focused1="true"] {
+  border : 1px solid red
+}
+
+input:invalid [focused1="true"] ~ span{
+  display: block;
+}
